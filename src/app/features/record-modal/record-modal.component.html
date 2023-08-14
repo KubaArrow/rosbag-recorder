@@ -1,0 +1,11 @@
+<p-dialog  [(visible)]="visible" [contentStyleClass]="'p-10 rounded-lg'" [showHeader]="false" [modal]="true" [closable]="false" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
+  <div class="w-full h-full flex flex-row justify-center">
+    <p class="p-5 text-4xl animate-pulse " >
+      RECORDING
+    </p>
+  </div>
+  <div *ngIf="!meta.duration&&!meta.records_limit" class="w-full h-full flex flex-row justify-center">
+    <button pButton pRipple label="STOP RECORDING" class="p-button-danger p-button-sm" (click)="stop_recording()"></button>
+  </div>
+
+</p-dialog>

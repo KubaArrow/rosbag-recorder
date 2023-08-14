@@ -1,27 +1,27 @@
-# RosbagRecorder
+Certainly, here's the translation of the provided description into English:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+---
 
-## Development server
+## Rosbag Recorder
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Rosbag Recorder** is an intuitive tool designed for recording rosbags with an emphasis on ensuring quality and user convenience. The application eliminates potential errors associated with improper topic names, while also providing flexibility in controlling the recording's duration.
 
-## Code scaffolding
+### Key Features:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Automatic Topic Name Correction**: The application focuses on delivering correct topic names, eliminating common errors.
+- **Customized Recording**: Users can set the recording duration, maximum message count, or manually stop the recording when desired.
+- **Flexibility**: Though built using Electron, its presentation layer is based on Angular.
+- **Developer-friendly**: For advanced users, we offer the ability to switch from loading from dict to direct loading from the Angular server.
 
-## Build
+### How to Run the Project:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository: `git clone [repository link]`.
+2. Navigate to the project directory: `cd rosbag-recorder`.
+3. Install dependencies: `npm install`.
+4. To run in developer mode (from the Angular server): `npm run start:electron
+   `.
+---
 
-## Running unit tests
+If you're interested in expanding or modifying this application, we encourage pull requests or issue reports in the GitHub issues section.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---

@@ -1,0 +1,12 @@
+<p-dialog  [(visible)]="visible" [contentStyleClass]="'p-10 rounded-lg'" [showHeader]="false" [modal]="true" [closable]="false" [style]="{ width: '80vw' }" [draggable]="false" [resizable]="false">
+  <div class="w-full h-full flex flex-row justify-center mb-4 ">
+    <p class=" text-2xl ">
+      ROSCORE has not been started
+    </p>
+
+  </div>
+  <div class="w-full h-full flex flex-row justify-center">
+    <button pButton pRipple label="REFRESH" class="p-button-danger p-button-sm" (click)="refresh_ros()" ></button>
+  </div>
+
+</p-dialog>
