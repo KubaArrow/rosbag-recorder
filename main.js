@@ -1,10 +1,17 @@
-const {app, BrowserWindow, ipcMain} = require('electron');
-const {exec} = require('child_process');
-require('electron-reload')(__dirname, {
-    ignored: /.*\.bag$/,
-    electron: require(`${__dirname}/node_modules/electron`)
-});
+const { app, BrowserWindow, ipcMain } = require('electron');
+const { exec } = require('child_process');
+const path = require("path");
 
+// require('electron-reload')(__dirname, {
+//     ignored: /.*\.bag$/,
+//     electron: require(`${__dirname}/node_modules/electron`)
+// });
+//
+// module.paths.push(path.resolve('node_modules'));
+// module.paths.push(path.resolve('../node_modules'));
+// module.paths.push(path.resolve(__dirname, '..', '..', '..', '..', 'resources', 'app', 'node_modules'));
+// module.paths.push(path.resolve(__dirname, '..', '..', '..', '..', 'resources', 'app.asar', 'node_modules'));
+//
 
 let win;
 
@@ -19,10 +26,11 @@ function createWindow() {
             contextIsolation: false,
         },
     });
-    //win.setMenu(null);
+    win.setMenu(null);
     //Auto reload
     //win.loadURL(`http://localhost:4200/`);
-    win.loadFile('dist/rosbag-recorder/index.html');
+    //win.loadFile('dist/rosbag-recorder/index.html');
+     win.loadFile('dist/index.html');
 
 }
 

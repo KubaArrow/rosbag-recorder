@@ -1,6 +1,7 @@
 module.exports = {
   packagerConfig: {
-    asar: true,
+    asar: false ,
+    electronVersion:"26.0.0"
   },
   rebuildConfig: {},
   makers: [
@@ -15,27 +16,8 @@ module.exports = {
     {
       name: '@electron-forge/maker-deb',
       config: {},
-    },
-    {
-      name: '@electron-forge/maker-rpm',
-      config: {},
-    },
-    {
-      name: "@electron-forge/maker-snap",
-      config: {
-        features: {
-          audio: true,
-          mpris: 'com.example.mpris',
-          webgl: true
-        },
-        summary: 'Pretty Awesome'
-      }
     }
   ],
   plugins: [
-    {
-      name: '@electron-forge/plugin-auto-unpack-natives',
-      config: {},
-    },
   ],
 };

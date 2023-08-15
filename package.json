@@ -4,7 +4,8 @@
   "description": "App for recording rosbags",
   "author": {
     "name": "kuba_arrow",
-    "url": "https://kubaarrow.com"
+    "url": "https://kubaarrow.com",
+    "email": "jakubstrzalkaa@gmail.com"
   },
   "license": "MIT",
   "main": "main.js",
@@ -19,7 +20,15 @@
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "private": true,
+  "build": {
+    "appId": "rosbag.recorder.app",
+    "asar": false,
+    "includeSubNodeModules": true,
+    "linux": {
+      "target": "deb"
+    }
+  },
+  "private": false,
   "dependencies": {
     "@angular/animations": "^16.1.0",
     "@angular/common": "^16.1.0",
@@ -53,7 +62,8 @@
     "@electron-forge/maker-zip": "^6.3.0",
     "@electron-forge/plugin-auto-unpack-natives": "^6.3.0",
     "@types/jasmine": "~4.3.0",
-    "electron": "^25.5.0",
+    "electron": "~26.0.0",
+    "electron-builder": "^24.6.3",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
